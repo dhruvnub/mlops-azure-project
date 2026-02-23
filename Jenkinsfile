@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Install Dependencies') {
             steps {
-                bat 'python -m pip install -r requirements.txt'
+                bat '"C:\\Users\\inYodreamzz\\AppData\\Local\\Programs\\Python\\Python310\\python.exe" -m pip install -r requirements.txt'
             }
         }
 
         stage('Train Model') {
             steps {
-                bat 'python train.py'
+                bat '"C:\\Users\\inYodreamzz\\AppData\\Local\\Programs\\Python\\Python310\\python.exe" train.py'
             }
         }
 
